@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button filter component.
+// -----------------------------------------------------------------------------
+.btn-filter {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    background-color: $btn-filter-bg-color;
+    border: 0px;
+    border-radius: 4px;
+    padding: 6px 22px;    
+    cursor: pointer;
+    transition: background-color $transition, color $transition, box-shadow $transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $brand-color;
+        color: $btn-filter-text-color-hover;
+        box-shadow: $button-filter-shadow;
+    }
+}

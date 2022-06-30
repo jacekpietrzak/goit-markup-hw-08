@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the clients component.
+// -----------------------------------------------------------------------------
+.clients {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        height: 92px;
+        min-width: 170px;
+        border: 1px solid $clients-border-color;
+        border-radius: 4px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: border $transition;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $clients-color-hover;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-self: center;
+        fill: $clients-icon-color;
+        transition: fill $transition;
+
+        &--company01 {
+            width: 41px;
+            height: 48px;
+        }
+
+        &--company02 {
+            width: 40px;
+            height: 53px;
+        }
+
+        &--company03 {
+            width: 45px;
+            height: 42px;
+        }
+
+        &--company04 {
+            width: 85px;
+            height: 42px;
+        }
+
+        &--company05 {
+            width: 63px;
+            height: 47px;
+        }
+
+        &--company06 {
+            width: 94px;
+            height: 45px;
+        }
+
+        .clients__link:hover &,
+        .clients__link:hover & {
+            fill: $clients-color-hover;
+        }
+    }
+}

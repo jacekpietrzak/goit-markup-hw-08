@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the team component.
+// -----------------------------------------------------------------------------
+.team {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        &--space-between:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__image {
+        min-width: 270px;
+        display: block;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    &__heading {
+        color: $text-color;
+
+        &--margin-bottom {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        color: $text-color;
+
+        &--margin-bottom {
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,252 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+///=== Fonts ===///
+
+    // Regular font family
+    $text-font-stack: 'Roboto', 'Raleway', sans-serif;
+
+    // Code (monospace) font family
+    $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+
+
+
+
+///=== Colors ===///
+
+    // Body background color
+    $body-bg-color: #fff;
+
+    // Main text color
+    $text-color: #212121;
+
+    // Secondary text color
+    $secondary-text-color: #757575;
+
+    // Main brand color
+    $brand-color: #2196f3;
+
+    // Header bottom border color
+    $header-border-color: #ececec;
+
+    // Header background color
+    $header-bg-color: #fff;
+
+
+
+
+    // H3 Footer color
+    $h3-footer-color: #fff;
+
+
+
+
+    // Logo main color
+    $logo-main-color: #2196f3;
+
+    // Logo secondary dark color
+    $logo-secondary-dark-color: #212121;
+
+    // Logo secondary light color
+    $logo-secondary-light-color: #fff;
+
+
+
+    // Contact link color
+    $contact-link-color: #757575;
+
+    
+    // Hero background overlay
+    $hero-bg-overlay: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
+    // Testimonials thumbnail background color
+    $testimonials-thumb-bg: #f5f4fa;
+
+    // Testimonials text color
+    $testimonials-text-color: #757575;
+
+
+
+    // Services heading color
+    $services-heading-color: #fff;
+
+    // Services heading background
+    $services-heading-bg: #2f303acc;
+
+
+
+    // Team background color
+    $team-background-color: #f5f4fa;
+
+
+
+    // Social list icon color
+    $social-list-icon-color: #afb1b8;
+
+    // Social list icon color hover
+    $social-list-icon-color-hover: #fff;
+
+    // Social list icon color footer
+    $social-list-icon-color-footer: #fff;
+
+    // Social list icon color bg
+    $social-list-icon-color-bg: #fff;
+
+    // Social list icon color bg footer
+    $social-list-icon-color-bg-footer: rgba(255, 255, 255, 0.1);
+
+    // Social list icon color bg hover
+    $social-list-icon-color-bg-hover: #2196f3;
+
+    // Social list icon color bg hover footer
+    $social-list-icon-color-bg-hover-footer: #2196f3;
+
+
+    
+    // Clients border color
+    $clients-border-color: #afb1b8;
+
+    // Clients icon color
+    $clients-icon-color: #afb1b8;
+
+    // Clients color hover
+    $clients-color-hover: #2196f3;
+
+
+
+    // Footer background color
+    $footer-bg-color: #2f303a;
+
+    // Footer text color
+    $footer-text-color: #fff;
+    
+    // Footer address link color
+    $footer-address-link-color: rgba(255, 255, 255, 0.6);
+
+    // Footer address link hover color
+    $footer-address-link-hover-color: rgba(255, 255, 255, 1);
+
+
+
+    // Newsletter input bg color
+    $newsletter-input-bg-color: transparent;
+
+    // Newsletter border color
+    $newsletter-border-color: #ffffff4d;
+
+    // Newsletter border color hover
+    $newsletter-border-color-hover: #fff;
+
+    // Newsletter color
+    $newsletter-color: rgba(255, 255, 255, 0.6);
+
+    // Newsletter color
+    $newsletter-color-hover: #fff;
+
+
+
+    // Product background color
+    $product-bg-color: #fff;
+
+    // Product description color
+    $product-description-color: #fff;
+
+    // Product description bg color
+    $product-description-bg-color: #2196f3e5;
+
+        
+    
+    // Button background color
+    $btn-bg-color: #2196f3;
+
+    // Button text color
+    $btn-color: #fff;
+
+    // Button icon color
+    $btn-icon-color: #fff;
+
+
+
+    // Button filter background color
+    $btn-filter-bg-color: #f5f4fa;
+
+    // Button filter text color hover
+    $btn-filter-text-color-hover: #fff;
+
+
+
+    // Modal backdrop background color 
+    $modal-backdrop-bg-color: hsla(0, 0%, 0%, 0.2);
+
+
+
+    // Modal window background color
+    $modal-window-bg-color: #fff;
+
+
+
+    // Close button border color
+    $close-btn-border-color: #0000001a;
+
+
+
+    // Signup form input border color
+    $signup-form-input-border-color: rgba(33, 33, 33, 0.2);
+
+    // Signup form input border color
+    $signup-form-textarea-border-color: rgba(33, 33, 33, 0.2);
+
+    // Signup form textarea placeholder color
+    $signup-form-textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+    
+
+///=== Miscellaneous ===///
+
+    // Container's maximum width
+    $container-max-width: 1200px;
+
+    // Section's padding
+    $section-padding: 94px 0;
+
+    // Hero image's max width
+    $hero-image-max-width: 1600px;
+
+    // Hero background img
+    $hero-bg-img: url('../images/hero-image.jpg');
+
+    // Animation
+    $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // Button shadow
+    $button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    // Button filter shadow
+    $button-filter-shadow:  
+     0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    // Newsletter border
+    $newsletter-border: 1px solid $newsletter-border-color;
+
+    // Product shadow
+    $product-shadow:  
+     0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    // Modal window min width
+    $modal-window-min-width: 528px;
+
+    // Modal window shadow
+    $modal-window-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    // Close button border
+    $close-btn-border: 1px solid $close-btn-border-color;
+
+    // Signup form input border
+    $signup-form-input-border: 1px solid $signup-form-input-border-color;
+
+    // Signup form textarea border
+    $signup-form-textarea-border: 1px solid $signup-form-textarea-border-color;

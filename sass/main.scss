@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/container',
+  'layout/section'; 
+
+// 5. Components
+@import
+  'components/logo',
+  'components/navigation',
+  'components/contact',
+  'components/modal-backdrop',
+  'components/button-close',
+  'components/modal-window',
+  'components/checkbox',
+  'components/signup-form',
+  'components/button',  
+  'components/button-filter',
+  'components/hero',
+  'components/h2-heading',
+  'components/h3-heading',
+  'components/testimonials',
+  'components/services',
+  'components/social-list',
+  'components/team',  
+  'components/clients',
+  'components/newsletter',
+  'components/filter-list',
+  'components/portfolio',
+  'components/product';
+
+// 6. Page-specific styles
+
+
+// 7. Themes
+

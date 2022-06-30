@@ -1,0 +1,11 @@
+/**
+ * Main content sections
+ */
+.section {
+    padding: $section-padding;
+
+    &--team-bg {
+        background-color: $team-background-color;
+    }
+}
+

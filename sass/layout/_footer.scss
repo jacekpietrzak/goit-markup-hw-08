@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+    background-color: $footer-bg-color;
+    padding: 60px 0;
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+
+        &--margin-right {
+            margin-right: 70px;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        list-style-type: none;
+        color: $footer-text-color;
+        
+        &--margin-bottom:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__link {
+        color: $footer-address-link-color;
+        transition: color $transition;
+
+        &:hover,
+        &:focus {
+            color: $footer-address-link-hover-color;
+        }
+    }
+
+    &__join-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        &--padding-top {
+            padding-top: 12px;
+        }
+        
+        &--margin-right {
+            margin-right: 78px;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+}

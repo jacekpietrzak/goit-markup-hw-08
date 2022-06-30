@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button close component.
+// -----------------------------------------------------------------------------
+.btn-close {
+    display: flex;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: $close-btn-border;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &__icon {
+        display: flex;
+        margin: auto;
+        width: 11px;
+        height: 11px;
+    }
+}
+

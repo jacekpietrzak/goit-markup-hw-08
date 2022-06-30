@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the modal backdrop component.
+// -----------------------------------------------------------------------------
+.modal-backdrop {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $modal-backdrop-bg-color;
+    transition: opacity $transition, visibility $transition;
+
+    &--hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

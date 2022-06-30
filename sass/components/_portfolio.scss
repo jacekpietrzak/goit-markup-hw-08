@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the grid component.
+// -----------------------------------------------------------------------------
+.portfolio {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+
+    &__item {
+        display: flex;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+

@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the newsletter component.
+// -----------------------------------------------------------------------------
+.newsletter {
+    display: flex;
+    flex-direction: column;
+
+    &--padding-top {
+        padding-top: 12px;
+    }
+
+    &--flex-grow {
+        flex-grow: 1;
+    }
+
+    &__signup-form {
+        display: flex;
+    }
+
+    &__input {
+        display: flex;
+        background-color: $newsletter-input-bg-color;
+        border: $newsletter-border;
+        border-radius: 4px;
+        padding: 15px 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $newsletter-color;
+        transition: color $transition, border-color $transition;
+
+        &--flex-grow {
+            flex-grow: 1;
+        }
+
+        &--margin-right {
+            margin-right: 12px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            color: $newsletter-color-hover;
+            border-color: $newsletter-border-color-hover;
+        }
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+}

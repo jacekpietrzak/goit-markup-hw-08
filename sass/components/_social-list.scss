@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the social list component.
+// -----------------------------------------------------------------------------
+.social-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        list-style-type: none;
+
+        &--space-between:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: $social-list-icon-color-bg;
+        color: $social-list-icon-color;
+        transition: color $transition, background-color $transition;
+
+        &--color-footer {
+            color: $social-list-icon-color-footer;
+            background-color: $social-list-icon-color-bg-footer;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $social-list-icon-color-bg-hover;
+            color: $social-list-icon-color-hover;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: currentcolor;
+    }
+}
