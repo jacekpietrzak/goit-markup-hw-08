@@ -1,27 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the logo component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
 .logo {
-    display: flex;
+    display: inline-flex;
     font-family: 'raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: capitalize;
     text-decoration: none;
 
-    &--align-center {
-        align-self: center;
-    }
-
-    &--margin-right {
-        margin-right: 93px;
-    }
-
-    &--margin-bottom {
-        margin-bottom: 20px;
+    &__primary {
+        color: $logo-main-color;
     }
     
     &--dark {
@@ -31,9 +25,62 @@
     &--light {
         color: $logo-secondary-light-color;
     }
-
-    &__primary {
-        color: $logo-main-color;
+    
+    &--margin-top {
+        margin-top: 16px;
     }
 
+    &--margin-bottom {
+        margin-bottom: 16px;
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .logo {
+        &--margin-right {
+                margin-right: 83px;
+            }        
+    }
+}
+
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .logo {
+        display: flex;
+        font-family: 'raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        text-decoration: none;
+
+        &--align-center {
+            align-self: center;
+        }
+
+        &--margin-right {
+            margin-right: 93px;
+        }
+
+        &--margin-bottom {
+            margin-bottom: 20px;
+        }
+        
+        &--dark {
+            color: $logo-secondary-dark-color;
+        }
+
+        &--light {
+            color: $logo-secondary-light-color;
+        }
+
+        &__primary {
+            color: $logo-main-color;
+        }
+
+    }
 }

@@ -1,9 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the modal window component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+
 .modal-window {
     background-color: $modal-window-bg-color;
-    min-width: $modal-window-min-width;
+    max-width: $modal-window-max-width-mobile;
     cursor: auto;
     box-shadow: $modal-window-shadow;
     border-radius: 4px;
@@ -17,7 +20,7 @@
     &__heading {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
 
@@ -26,4 +29,33 @@
         }
     }
 }
+// Tablet 768-1200//
 
+// Desktop 1200+//
+@media screen and (min-width: $tablet) {
+    .modal-window {
+        background-color: $modal-window-bg-color;
+        max-width: $modal-window-max-width-desktop;
+        cursor: auto;
+        box-shadow: $modal-window-shadow;
+        border-radius: 4px;
+        padding: 40px;
+        position: relative;
+
+        &--center {
+            margin: auto;
+        }
+
+        &__heading {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.15;
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            &--margin-bottom {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

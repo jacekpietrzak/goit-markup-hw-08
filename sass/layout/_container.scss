@@ -1,19 +1,50 @@
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-    max-width: $container-max-width;    /* 1 */
-    margin-left: auto;    /* 2 */
-    margin-right: auto;    /* 2 */
-    padding-left: 15px;    /* 3 */
-    padding-right: 15px;    /* 3 */
-    width: 100%;    /* 1 */
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the container component.
+// -----------------------------------------------------------------------------
 
-    &--flex {
+// Mobile 480-768//
+.container {
+    max-width: $container-max-width;
+    min-width: $container-min-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    &--header-mobile {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
+// Tablet 768-1200//
+@media screen and (min-width: $tablet){
+    .container {
+        &--footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop){
+    .container {
+        &--flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }       
+         &--footer {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: nowrap;
+            justify-content: flex-start;
+         }
+    }
+}

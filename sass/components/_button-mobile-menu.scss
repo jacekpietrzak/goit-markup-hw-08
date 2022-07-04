@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button burger component.
+// -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+.btn-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;    
+    cursor: pointer;
+    color: $mobile-menu-btn-open-color;
+    transition: color $transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-color;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 16px;
+        fill: currentColor;
+    }
+}
+
+
+// Tablet + Desktop 768+//
+
+@media screen and (min-width: $tablet) {
+    .btn-mobile-menu {
+        display:none;
+    }
+}

@@ -79,6 +79,9 @@
     // Team background color
     $team-background-color: #f5f4fa;
 
+    // Team item background color
+    $team-item-bg-color: #fff;
+
 
 
     // Social list icon color
@@ -199,21 +202,51 @@
 
     // Signup form textarea placeholder color
     $signup-form-textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+
+
+
+    // Mobile menu background color
+    $mobile-menu-bg-color: #fff;
+
+    // Mobile menu button color
+    $mobile-menu-btn-open-color: #212121;
+    $mobile-menu-btn-close-color: #212121;
     
 
 ///=== Miscellaneous ===///
 
     // Container's maximum width
     $container-max-width: 1200px;
+    $container-max-width-tablet: 1200px;
+    $container-max-width-desktop: 1200px;
+
+    // Container's min width
+    $container-min-width: 480px;
+    $container-min-width-tablet: 1200px;
+    $container-min-width-desktop: 1200px;
+
+    // Media screen brakes
+    $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1200px;
 
     // Section's padding
-    $section-padding: 94px 0;
+    $section-padding-mobile: 60px 0;
+    $section-padding-tablet: 94px 0;
+    $section-padding-desktop: 94px 0;
 
     // Hero image's max width
     $hero-image-max-width: 1600px;
 
-    // Hero background img
-    $hero-bg-img: url('../images/hero-image.jpg');
+    // Hero background img 1x
+    $hero-bg-img: url('../images/hero-mobile/hero-bg-mobile-@1x-480x400.jpg');
+    $hero-bg-img-tablet: url('../images/hero-tablet/hero-bg-tablet-@1x-768x400.jpg');
+    $hero-bg-img-desktop: url('../images/hero-desktop/hero-bg-desktop-@1x-1600x1600.jpg');
+
+    // Hero background img 2x
+    $hero-bg-img-2x: url('../images/hero-mobile/hero-bg-mobile-@2x-960-800.jpg');
+    $hero-bg-img-tablet-2x: url('../images/hero-tablet/hero-bg-tablet-@2x-1536x800.jpg');
+    $hero-bg-img-desktop-2x: url('../images/hero-desktop/hero-bg-desktop-@2x-3200x3200.jpg');
 
     // Animation
     $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -236,8 +269,10 @@
      0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    // Modal window min width
-    $modal-window-min-width: 528px;
+    // Modal window max width
+    $modal-window-max-width-mobile: 450px;
+    $modal-window-max-width-tablet: 528px;
+    $modal-window-max-width-desktop: 528px;
 
     // Modal window shadow
     $modal-window-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

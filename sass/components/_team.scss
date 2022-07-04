@@ -1,26 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the team component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+@media screen and (min-width: 0px) {
 .team {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-
+    margin-bottom: -30px;
+    
     &__item {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        background-color: #fff;
+        align-content: center;        
+        background-color: $team-item-bg-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
-        &--space-between:not(:first-child) {
-            margin-left: 30px;
+        &--space-between {
+            margin-bottom: 30px;
         }
     }
 
     &__image {
-        min-width: 270px;
+        min-width: 100%;
         display: block;
     }
 
@@ -32,6 +34,12 @@
     }
 
     &__heading {
+        font-family: 'roboto';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.1875;
+        letter-spacing: 0.03em;
         color: $text-color;
 
         &--margin-bottom {
@@ -40,10 +48,89 @@
     }
 
     &__text {
-        color: $text-color;
+        font-family: 'roboto';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.1875;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
 
         &--margin-bottom {
             margin-bottom: 16px;
+        }
+    }
+}
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+
+        &__item {
+            flex-basis: #{calc((100% / 2) - 30px)};
+
+            &--space-between {                
+                margin-left: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop){
+    .team {
+        
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            background-color: #fff;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            flex-basis: #{calc((100% / 4) - 30px)};
+
+            &--space-between:not(:first-child) {
+                margin-left: 30px;
+            }
+        }
+
+        &__image {
+            min-width: 270px;
+            display: block;
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        &__heading {
+            color: $text-color;
+
+            &--margin-bottom {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__text {
+            color: $text-color;
+
+            &--margin-bottom {
+                margin-bottom: 16px;
+            }
         }
     }
 }

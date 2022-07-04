@@ -1,6 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button filter component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+@media screen and (max-width: calc($desktop - 1px)) {
 .btn-filter {
     font-family: Roboto;
     font-style: normal;
@@ -12,9 +15,21 @@
     background-color: $btn-filter-bg-color;
     border: 0px;
     border-radius: 4px;
-    padding: 6px 22px;    
+    padding: 6px 0;
     cursor: pointer;
     transition: background-color $transition, color $transition, box-shadow $transition;
+
+    &--small {
+        width: 103px;
+    }
+
+    &--medium {
+        width: 130px;
+    }
+
+    &--large {
+        width: 145px;
+    }
 
     &:hover,
     &:active,
@@ -22,5 +37,34 @@
         background-color: $brand-color;
         color: $btn-filter-text-color-hover;
         box-shadow: $button-filter-shadow;
+    }
+}
+}
+// Tablet 768-1200//
+
+// Desktop 1200+//
+@media screen and (min-width: calc($desktop - 1px)) {
+    .btn-filter {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        letter-spacing: 0.03em;
+        color: $text-color;
+        background-color: $btn-filter-bg-color;
+        border: 0px;
+        border-radius: 4px;
+        padding: 6px 22px;    
+        cursor: pointer;
+        transition: background-color $transition, color $transition, box-shadow $transition;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $brand-color;
+            color: $btn-filter-text-color-hover;
+            box-shadow: $button-filter-shadow;
+        }
     }
 }

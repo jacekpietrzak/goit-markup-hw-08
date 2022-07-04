@@ -1,27 +1,84 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the hero component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
 .hero {
     text-align: center;
 
     &__image {
-        max-width: $hero-image-max-width;
-        padding: 200px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        min-height: 400px;
         background-image: $hero-bg-overlay, $hero-bg-img;
+
+        @include retina {
+            background-image: $hero-bg-overlay, $hero-bg-img-2x;       
+        }
+
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin: 0 auto;
     }
 
     &__heading {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.615;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        max-width: 696px;
+        max-width: 365px;
         margin: 0 auto 30px;
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .hero {
+
+        &__image {
+            background-image: $hero-bg-overlay, $hero-bg-img-tablet;
+            
+            @include retina {
+                background-image: $hero-bg-overlay, $hero-bg-img-tablet-2x;
+            }
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .hero {
+        text-align: center;
+
+        &__image {
+            max-width: $hero-image-max-width;
+            min-height: 600px;
+            background-image: $hero-bg-overlay, $hero-bg-img-desktop;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+
+            @include retina {
+                background-image: $hero-bg-overlay, $hero-bg-img-desktop-2x;
+            }
+        }
+
+        &__heading {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            max-width: 696px;
+            margin: 0 auto 30px;
+        }
     }
 }

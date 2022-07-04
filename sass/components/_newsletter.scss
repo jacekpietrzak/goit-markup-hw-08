@@ -1,24 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the newsletter component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
 .newsletter {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &--padding-top {
-        padding-top: 12px;
-    }
-
-    &--flex-grow {
-        flex-grow: 1;
+        padding-top: 60px;
     }
 
     &__signup-form {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
     }
 
     &__input {
-        display: flex;
+        width: 100%;
         background-color: $newsletter-input-bg-color;
         border: $newsletter-border;
         border-radius: 4px;
@@ -29,12 +31,8 @@
         color: $newsletter-color;
         transition: color $transition, border-color $transition;
 
-        &--flex-grow {
-            flex-grow: 1;
-        }
-
-        &--margin-right {
-            margin-right: 12px;
+        &--margin-bottom {
+            margin-bottom: 20px;
         }
 
         &:hover,
@@ -47,6 +45,71 @@
 
         &::placeholder {
             font-size: 16px;
+        }
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+    .newsletter {
+        &__input {
+            width: 450px;
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--padding-top {
+            padding-top: 12px;
+        }
+
+        &--flex-grow {
+            flex-grow: 1;
+        }
+
+        &__signup-form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__input {
+            display: flex;
+            background-color: $newsletter-input-bg-color;
+            border: $newsletter-border;
+            border-radius: 4px;
+            padding: 15px 16px;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: $newsletter-color;
+            transition: color $transition, border-color $transition;
+
+            &--margin-right {
+                margin-right: 12px;
+            }
+
+            &--margin-bottom {
+                margin-bottom: 0px;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                outline: none;
+                color: $newsletter-color-hover;
+                border-color: $newsletter-border-color-hover;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+            }
         }
     }
 }

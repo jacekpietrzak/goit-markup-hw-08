@@ -2,6 +2,7 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
+// Mobile 480-768//
 .footer {
     background-color: $footer-bg-color;
     padding: 60px 0;
@@ -9,23 +10,21 @@
     &__address {
         display: flex;
         flex-direction: column;
-
-        &--margin-right {
-            margin-right: 70px;
-        }
+        align-items: center;
     }
 
     &__text {
+        font-weight: 400;
         font-style: normal;
         font-size: 14px;
-        line-height: 2;
-        letter-spacing: 0.03em;
-        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;        
         list-style-type: none;
+        text-align: center;
         color: $footer-text-color;
-        
+
         &--margin-bottom:not(:last-child) {
-            margin-bottom: 9px;
+            margin-bottom: 8px;
         }
     }
 
@@ -42,14 +41,11 @@
     &__join-us {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: start;
 
         &--padding-top {
-            padding-top: 12px;
-        }
-        
-        &--margin-right {
-            margin-right: 78px;
+            padding-top: 60px;
         }
     }
 
@@ -57,5 +53,84 @@
         display: flex;
         align-items: center;
         list-style-type: none;
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+    .footer {
+        &__address {                        
+            flex-basis: 50%;
+        }
+
+        &__join-us {            
+            flex-basis: 50%;
+
+            &--padding-top {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .footer {
+
+        &__address {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &--margin-right {
+                margin-right: 70px;
+            }
+        }
+
+        &__text {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            list-style-type: none;
+            color: $footer-text-color;
+            text-align: left;
+            
+            &--margin-bottom:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+
+        &__link {
+            color: $footer-address-link-color;
+            transition: color $transition;
+
+            &:hover,
+            &:focus {
+                color: $footer-address-link-hover-color;
+            }
+        }
+
+        &__join-us {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+
+            &--padding-top {
+                padding-top: 12px;
+            }
+            
+            &--margin-right {
+                margin-right: 78px;
+            }
+        }
+
+        &__social-list {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+        }
     }
 }

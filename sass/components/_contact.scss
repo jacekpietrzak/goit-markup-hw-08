@@ -1,54 +1,123 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the contacts component.
 // -----------------------------------------------------------------------------
+
+// Mobile 480-768//
 .contact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
+    display: none;
+}
 
-    &--flex-end {
-        justify-content: flex-end;
-    }
 
-    &--flex-grow {
-        flex-grow: 1;
-    }
-
-    &__item:not(:first-child) {
-        margin-left: 50px;
-        }
-
-    &__link {
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+    .contact {
         display: flex;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        font-style: normal;
-        text-transform: lowercase;
-        color: $contact-link-color;
-        transition: color $transition;
+        flex-direction: column;
+        align-items: start;
+        list-style: none;
 
-        &:hover,
-        &:active,
-        &:focus {
-            color: $brand-color;
+        &--flex-end {
+                justify-content: flex-end;
+            }
+
+        &--flex-grow {
+            flex-grow: 1;
+        }
+
+        &__item--margin-bottom {
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            text-transform: lowercase;
+            color: $contact-link-color;
+            transition: color $transition;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $brand-color;
+            }
+        }
+
+        &__icon-envelope {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+        }
+
+        &__icon-smartphone {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 10px;
+            height: 16px;
         }
     }
+}
 
-    &__icon-envelope {
-        fill: currentColor;
-        margin-right: 10px;
-        width: 16px;
-        height: 12px;
-    }
+// Desktop 1200+//
+@media screen and (min-width: $desktop){
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
 
-    &__icon-smartphone {
-        fill: currentColor;
-        margin-right: 10px;
-        width: 10px;
-        height: 16px;
+        &--flex-end {
+            justify-content: flex-end;
+        }
+
+        &--flex-grow {
+            flex-grow: 1;
+        }
+
+        &__item--margin-bottom {
+            margin-bottom: 0px;
+        }
+
+        &__item:not(:first-child) {
+            margin-left: 50px;
+            }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            text-transform: lowercase;
+            color: $contact-link-color;
+            transition: color $transition;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $brand-color;
+            }
+        }
+
+        &__icon-envelope {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+        }
+
+        &__icon-smartphone {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 10px;
+            height: 16px;
+        }
     }
 }

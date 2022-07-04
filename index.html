@@ -22,15 +22,17 @@
   <body>
     <!-- Header start -->
     <header class="header">
-      <div class="container container--flex">
+      <div class="container container--flex container--header-mobile">
         <!-- Logo start -->
-        <a class="logo logo--margin-right logo--align-center logo--dark" href="index.html"
+        <a
+          class="logo logo--margin-right logo--align-center logo--dark logo--margin-top logo--margin-bottom"
+          href="index.html"
           ><span class="logo__primary">Web</span>Studio</a
         >
         <!-- Logo end -->
 
         <!-- Main navigation start -->
-        <nav>
+        <nav class="nav__container">
           <ul class="nav">
             <li class="nav__item nav__item--space-between">
               <a class="nav__link nav__link--current-page" href="index.html">Agencja</a>
@@ -46,8 +48,9 @@
         <!-- Main navigation end -->
 
         <!-- Contact start -->
-        <ul class="contact contact--flex-end contact--flex-grow">
-          <li class="contact__item">
+
+        <ul class="contact contact--flex-end">
+          <li class="contact__item contact__item--margin-bottom">
             <a class="contact__link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon-envelope">
                 <use href="images/icons.svg#icon-envelope"></use></svg
@@ -62,7 +65,17 @@
             >
           </li>
         </ul>
+
         <!-- Contact end -->
+
+        <!-- Button burger start -->
+
+        <button class="btn-mobile-menu" type="button">
+          <svg class="btn-mobile-menu__icon js-open-menu" viewBox="0 0 24 16">
+            <use href="images/icons.svg#btn-mobile-menu"></use>
+          </svg>
+        </button>
+        <!-- Button burger end -->
       </div>
     </header>
     <!-- Header end -->
@@ -137,39 +150,56 @@
           <!-- Testimonials end -->
 
           <!-- Services start -->
-          <h2 class="h2-heading h2-heading--margin-bottom">Czym się zajmujemy</h2>
-          <ul class="services">
-            <li class="services__item services__item--space-between">
-              <img
-                class="services__image"
-                src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
-                alt="Close up image programer"
-              />
-              <div class="services__heading">
-                <h3>Aplikacje Komputerowe</h3>
-              </div>
-            </li>
-            <li class="services__item services__item--space-between">
-              <img
-                class="services__image"
-                src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
-                alt="Designer is developing smartphone application"
-              />
-              <div class="services__heading">
-                <h3>Aplikacje Mobilne</h3>
-              </div>
-            </li>
-            <li class="services__item services__item--space-between">
-              <img
-                class="services__image"
-                src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
-                alt="Creative artist with web design with working colour selection graphic tablet"
-              />
-              <div class="services__heading">
-                <h3>Rozwiązania Graficzne</h3>
-              </div>
-            </li>
-          </ul>
+          <div class="services">
+            <h2 class="h2-heading h2-heading--margin-bottom">Czym się zajmujemy</h2>
+            <ul class="services__list">
+              <li class="services__item services__item--space-between">
+                <img
+                  class="services__image"
+                  src="images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@1x-370x294.jpg"
+                  srcset="
+                    images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@1x-370x294.jpg 370w,
+                    images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@2x-740x588.jpg 740w
+                  "
+                  alt="Close up image programer"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <div class="services__heading">
+                  <h3>Aplikacje Komputerowe</h3>
+                </div>
+              </li>
+              <li class="services__item services__item--space-between">
+                <img
+                  class="services__image"
+                  src="images/services-desktop/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713-@1x-370x294.jpg"
+                  srcset="
+                    images/services-desktop/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713-@1x-370x294.jpg 370w,
+                    images/services-desktop/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713-@2x-740x588.jpg 740w
+                  "
+                  alt="Designer is developing smartphone application"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <div class="services__heading">
+                  <h3>Aplikacje Mobilne</h3>
+                </div>
+              </li>
+              <li class="services__item services__item--space-between">
+                <img
+                  class="services__image"
+                  src="images\services-desktop\creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119-@1x-370x294.jpg"
+                  srcset="
+                    images\services-desktop\creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119-@1x-370x294.jpg 370w,
+                    images\services-desktop\creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119-@2x-740x588.jpg 740w
+                  "
+                  alt="Creative artist with web design with working colour selection graphic tablet"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <div class="services__heading">
+                  <h3>Rozwiązania Graficzne</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
           <!-- Services end -->
         </div>
       </section>
@@ -182,7 +212,20 @@
           <ul class="team">
             <li class="team__item team__item--space-between">
               <figure>
-                <img class="team__image" src="images/john-doe-product-designer.jpg" alt="John Doe product designer" />
+                <img
+                  class="team__image"
+                  src="images/team-mobile/john-doe-product-designer-mobile-@1x-450x460.jpg"
+                  srcset="
+                    images/team-mobile/john-doe-product-designer-mobile-@1x-450x460.jpg   450w,
+                    images/team-mobile/john-doe-product-designer-mobile-@2x-900x920.jpg   900w,
+                    images/team-tablet/john-doe-product-designer-tablet-@1x-354x374.jpg   354w,
+                    images/team-tablet/john-doe-product-designer-tablet-@2x-708x748.jpg   708w,
+                    images/team-desktop/john-doe-product-designer-desktop-@1x-270x260.jpg 270w,
+                    images/team-desktop/john-doe-product-designer-desktop-@2x-540x520.jpg 540w
+                  "
+                  alt="John Doe product designer"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                />
 
                 <figcaption class="team__details">
                   <h3 class="team__heading team__heading--margin-bottom">John Doe</h3>
@@ -223,8 +266,17 @@
               <figure>
                 <img
                   class="team__image"
-                  src="images/john-doe-frontend-developer.jpg"
+                  src="images/team-mobile/john-doe-frontend-developer-mobile-@1x-450x460.jpg"
+                  srcset="
+                    images/team-mobile/john-doe-frontend-developer-mobile-@1x-450x460.jpg   450w,
+                    images/team-mobile/john-doe-frontend-developer-mobile-@2x-900x920.jpg   900w,
+                    images/team-tablet/john-doe-frontend-developer-tablet-@1x-354x374.jpg   354w,
+                    images/team-tablet/john-doe-frontend-developer-tablet-@2x-708x748.jpg   708w,
+                    images/team-desktop/john-doe-frontend-developer-desktop-@1x-270x260.jpg 270w,
+                    images/team-desktop/john-doe-frontend-developer-desktop-@2x-540x520.jpg 540w
+                  "
                   alt="John Doe frontend developer"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
 
                 <figcaption class="team__details">
@@ -264,7 +316,20 @@
             </li>
             <li class="team__item team__item--space-between">
               <figure>
-                <img class="team__image" src="images/john-doe-marketing.jpg" alt="John Doe marketing" />
+                <img
+                  class="team__image"
+                  src="images/team-mobile/john-doe-marketing-mobile-@1x-450x460.jpg"
+                  srcset="
+                    images/team-mobile/john-doe-marketing-mobile-@1x-450x460.jpg   450w,
+                    images/team-mobile/john-doe-marketing-mobile-@2x-900x920.jpg   900w,
+                    images/team-tablet/john-doe-marketing-tablet-@1x-354x374.jpg   354w,
+                    images/team-tablet/john-doe-marketing-tablet-@2x-708x748.jpg   708w,
+                    images/team-desktop/john-doe-marketing-desktop-@1x-270x260.jpg 270w,
+                    images/team-desktop/john-doe-marketing-desktop-@2x-540x520.jpg 540w
+                  "
+                  alt="John Doe marketing"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                />
 
                 <figcaption class="team__details">
                   <h3 class="team__heading team__heading--margin-bottom">John Doe</h3>
@@ -303,7 +368,20 @@
             </li>
             <li class="team__item team__item--space-between">
               <figure>
-                <img class="team__image" src="images/john-doe-ui-designer.jpg" alt="John Doe Ui designer" />
+                <img
+                  class="team__image"
+                  src="images/team-mobile/john-doe-ui-designer-mobile-@1x-450x460.jpg"
+                  srcset="
+                    images/team-mobile/john-doe-ui-designer-mobile-@1x-450x460.jpg   450w,
+                    images/team-mobile/john-doe-ui-designer-mobile-@2x-900x920.jpg   900w,
+                    images/team-tablet/john-doe-ui-designer-tablet-@1x-354x374.jpg   354w,
+                    images/team-tablet/john-doe-ui-designer-tablet-@2x-708x748.jpg   708w,
+                    images/team-desktop/john-doe-ui-designer-desktop-@1x-270x260.jpg 270w,
+                    images/team-desktop/john-doe-ui-designer-desktop-@2x-540x520.jpg 540w
+                  "
+                  alt="John Doe Ui designer"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                />
 
                 <figcaption class="team__details">
                   <h3 class="team__heading team__heading--margin-bottom">John Doe</h3>
@@ -351,37 +429,37 @@
 
           <!-- Clients start -->
           <ul class="clients">
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company01">
                   <use href="images/icons.svg#client-icon-company-01"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company02">
                   <use href="images/icons.svg#client-icon-company-02"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company03">
                   <use href="images/icons.svg#client-icon-company-03"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company04">
                   <use href="images/icons.svg#client-icon-company-04"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company05">
                   <use href="images/icons.svg#client-icon-company-05"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon clients__icon--company06">
                   <use href="images/icons.svg#client-icon-company-06"></use></svg
@@ -395,7 +473,7 @@
 
     <!-- Footer start -->
     <footer class="footer">
-      <div class="container container--flex">
+      <div class="container container--footer ">
         <div class="footer__address footer__address--margin-right">
           <!-- Logo start -->
           <a class="logo logo--margin-bottom logo--light" href="index.html"
@@ -450,14 +528,13 @@
           </ul>
           <!-- social links end -->
         </div>
-
         <!-- Newsletter start -->
-        <div class="newsletter newsletter--padding-top newsletter--flex-grow">
+        <div class="newsletter newsletter--flex-grow newsletter--padding-top">
           <h3 class="h3-heading h3-heading--margin-bottom">Zapisz się do newslettera</h3>
 
           <form name="newsletter-signup-form" class="newsletter__signup-form" method="POST" autocomplete="on">
             <input
-              class="newsletter__input newsletter__input--flex-grow newsletter__input--margin-right"
+              class="newsletter__input newsletter__input--margin-right newsletter__input--margin-bottom"
               type="email"
               name="email"
               placeholder="E-mail"
@@ -500,7 +577,7 @@
             type="text"
             name="name"
             id="name"
-            required 
+            required
           />
 
           <label class="signup-form__label signup-form__label--margin-bottom" for="phone_number">Telefon</label>
@@ -509,7 +586,7 @@
             type="tel"
             name="phone_number"
             id="phone_number"
-            required 
+            required
           />
 
           <label class="signup-form__label signup-form__label--margin-bottom" for="email">Email</label>
@@ -518,7 +595,7 @@
             type="email"
             name="email"
             id="email"
-            required 
+            required
           />
 
           <label class="signup-form__label signup-form__label--margin-bottom" for="comment">Komentarz</label>
@@ -527,7 +604,7 @@
             name="comment"
             id="comment"
             placeholder="Wprowadź tekst"
-            required 
+            required
           ></textarea>
 
           <label class="signup-form__terms signup-form__terms--margin-bottom" for="terms">
@@ -537,7 +614,7 @@
               name="privacy-policy-and-terms-and-conditions"
               value="agree"
               id="terms"
-              required 
+              required
             />
 
             Oświadczam iż akceptuję&nbsp;<a class="signup-form__link" href="#">Regulamin</a>&nbsp;i&nbsp;<a
@@ -551,7 +628,66 @@
         <!-- Signup form end -->
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="js/modal.js"></script>
     <!-- Modal window end -->
+
+    <!-- Mobile menu start-->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn-close js-close-menu">
+        <svg class="mobile-menu__icon" viewBox="0 0 19 19">
+          <use href="images/icons.svg#btn-mobile-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="index.html" class="mobile-menu__link mobile-menu__link--current-page">Agencja</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__contact">
+        <ul class="mobile-menu__list mobile-menu__list--margin-bottom">
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a href="tel:+48111111111" class="mobile-menu__link mobile-menu__link--phone">+48 111 111 111</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__link--email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-list">
+          <li>
+            <a href="#" class="mobile-menu__social-link">instagram</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__social-link">twitter</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__social-link">facebook</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+          </li>
+          <li><a href="#" class="mobile-menu__social-link">linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="js/body-scroll-lock.js"></script>
+    <!-- Mobile menu end-->
   </body>
 </html>
