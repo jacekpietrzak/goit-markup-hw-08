@@ -217,13 +217,9 @@
 
     // Container's maximum width
     $container-max-width: 1200px;
-    $container-max-width-tablet: 1200px;
-    $container-max-width-desktop: 1200px;
 
     // Container's min width
     $container-min-width: 480px;
-    $container-min-width-tablet: 1200px;
-    $container-min-width-desktop: 1200px;
 
     // Media screen brakes
     $mobile: 480px;
@@ -271,8 +267,8 @@
 
     // Modal window max width
     $modal-window-max-width-mobile: 450px;
-    $modal-window-max-width-tablet: 528px;
-    $modal-window-max-width-desktop: 528px;
+    $modal-window-min-width-tablet: 528px;
+    $modal-window-min-width-desktop: 528px;
 
     // Modal window shadow
     $modal-window-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

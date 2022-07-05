@@ -53,16 +53,11 @@
 // Desktop 1200+//
 @media screen and (min-width: $desktop) {
     .hero {
-        text-align: center;
 
         &__image {
             max-width: $hero-image-max-width;
             min-height: 600px;
             background-image: $hero-bg-overlay, $hero-bg-img-desktop;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0 auto;
 
             @include retina {
                 background-image: $hero-bg-overlay, $hero-bg-img-desktop-2x;
@@ -70,13 +65,8 @@
         }
 
         &__heading {
-            font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: #fff;
-            text-align: center;
             max-width: 696px;
             margin: 0 auto 30px;
         }

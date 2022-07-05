@@ -57,13 +57,13 @@
 }
 
 // Tablet 768-1200//
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
     .footer {
-        &__address {                        
+        &__address {
             flex-basis: 50%;
         }
 
-        &__join-us {            
+        &__join-us {
             flex-basis: 50%;
 
             &--padding-top {
@@ -78,8 +78,6 @@
     .footer {
 
         &__address {
-            display: flex;
-            flex-direction: column;
             align-items: flex-start;
 
             &--margin-right {
@@ -88,13 +86,7 @@
         }
 
         &__text {
-            font-style: normal;
-            font-size: 14px;
             line-height: 2;
-            letter-spacing: 0.03em;
-            font-weight: 400;
-            list-style-type: none;
-            color: $footer-text-color;
             text-align: left;
             
             &--margin-bottom:not(:last-child) {
@@ -102,21 +94,8 @@
             }
         }
 
-        &__link {
-            color: $footer-address-link-color;
-            transition: color $transition;
-
-            &:hover,
-            &:focus {
-                color: $footer-address-link-hover-color;
-            }
-        }
-
         &__join-us {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: flex-start;
+            align-items: flex-start;          
 
             &--padding-top {
                 padding-top: 12px;
@@ -125,12 +104,6 @@
             &--margin-right {
                 margin-right: 78px;
             }
-        }
-
-        &__social-list {
-            display: flex;
-            align-items: center;
-            list-style-type: none;
         }
     }
 }

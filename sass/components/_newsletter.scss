@@ -50,7 +50,7 @@
 }
 
 // Tablet 768-1200//
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
     .newsletter {
         &__input {
             width: 450px;
@@ -61,8 +61,6 @@
 // Desktop 1200+//
 @media screen and (min-width: $desktop) {
     .newsletter {
-        display: flex;
-        flex-direction: column;
         align-items: flex-start;
 
         &--padding-top {
@@ -74,22 +72,12 @@
         }
 
         &__signup-form {
-            display: flex;
             flex-direction: row;
-            align-items: center;
         }
 
         &__input {
             display: flex;
-            background-color: $newsletter-input-bg-color;
-            border: $newsletter-border;
-            border-radius: 4px;
-            padding: 15px 16px;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: $newsletter-color;
-            transition: color $transition, border-color $transition;
+            
 
             &--margin-right {
                 margin-right: 12px;
@@ -97,18 +85,6 @@
 
             &--margin-bottom {
                 margin-bottom: 0px;
-            }
-
-            &:hover,
-            &:focus,
-            &:active {
-                outline: none;
-                color: $newsletter-color-hover;
-                border-color: $newsletter-border-color-hover;
-            }
-
-            &::placeholder {
-                font-size: 16px;
             }
         }
     }

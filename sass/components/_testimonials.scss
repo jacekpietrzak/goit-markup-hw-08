@@ -66,17 +66,17 @@
         flex-basis: #{calc((100% / 2) - 30px)};
         margin-left: 30px;
         margin-bottom: 30px;
-
         }        
+
+        &__heading {
+            text-align: left;
+        }
     }
 }
 
 // Desktop 1200+//
 @media screen and (min-width: $desktop) {
     .testimonials {
-        display: flex;
-        list-style-type: none;
-        flex-wrap: wrap;
 
         &--margin-bottom {
             margin-bottom: 94px;
@@ -88,45 +88,6 @@
             &--space-between:not(:first-child) {
                 margin-left: 30px;
             }
-        }
-
-        &__thumbnail {
-            display: flex;
-            justify-content: center;
-            height: 120px;
-            padding: 25px 0;
-            border-radius: 4px;
-            background-color: $testimonials-thumb-bg;
-
-            &--margin-bottom {
-                margin-bottom: 30px;
-            }
-        }
-
-        &__icon {
-            width: 70px;
-            height: 70px;
-        }
-
-        &__heading {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            color: $text-color;
-
-            &--margin-bottom {
-                margin-bottom: 10px;
-            }
-        }
-
-        &__text {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: $testimonials-text-color;
         }
     }   
 }

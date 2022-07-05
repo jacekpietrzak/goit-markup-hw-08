@@ -20,7 +20,7 @@
 }
 
 // Tablet 768-1200//
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $tablet) {
     .container {
         &--footer {
             display: flex;
@@ -41,9 +41,7 @@
             align-items: center;
         }       
          &--footer {
-             display: flex;
-             flex-direction: row;
-             flex-wrap: nowrap;
+            flex-wrap: nowrap;
             justify-content: flex-start;
          }
     }

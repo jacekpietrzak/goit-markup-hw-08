@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button mobile menu close component.
+// -----------------------------------------------------------------------------
+
+// Mobile 480-768//
+.btn-mobile-menu-close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    color: $btn-mobile-menu-color;
+    transition: color $transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-color;
+    }
+
+    &__icon {
+
+        width: 19px;
+        height: 19px;
+        fill: currentColor;
+    }
+}
+
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .btn-mobile-menu-close {
+        display: none;
+    }
+}
+
+// Desktop 1200+//

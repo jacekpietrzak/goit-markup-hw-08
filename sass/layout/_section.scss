@@ -16,9 +16,5 @@
 @media screen and (min-width: $desktop) {
     .section {
         padding: $section-padding-desktop;
-
-        &--team-bg {
-            background-color: $team-background-color;
-        }
     }
 }
