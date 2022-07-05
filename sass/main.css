@@ -1106,6 +1106,7 @@ body {
   max-width: 100%;
   min-height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile/hero-bg-mobile-@1x-480x400.jpg");
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
