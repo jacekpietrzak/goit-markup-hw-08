@@ -50,7 +50,7 @@
 }
 
 // Tablet 768-1200//
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
     .newsletter {
         &__input {
             width: 450px;
@@ -76,6 +76,7 @@
         }
 
         &__input {
+            width: 100%;
             display: flex;
             
 

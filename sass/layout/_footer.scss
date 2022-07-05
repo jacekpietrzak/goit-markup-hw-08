@@ -57,7 +57,7 @@
 }
 
 // Tablet 768-1200//
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
     .footer {
         &__address {
             flex-basis: 50%;
@@ -78,6 +78,7 @@
     .footer {
 
         &__address {
+            flex-basis: auto;
             align-items: flex-start;
 
             &--margin-right {
@@ -95,6 +96,7 @@
         }
 
         &__join-us {
+            flex-basis: auto;
             align-items: flex-start;          
 
             &--padding-top {
