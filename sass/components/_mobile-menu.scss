@@ -110,6 +110,7 @@
 
     &__social-link {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         font-family: 'roboto';
         font-style: normal;        

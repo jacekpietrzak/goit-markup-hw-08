@@ -473,7 +473,6 @@ body {
 }
 .container {
   max-width: 1200px;
-  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -749,6 +748,7 @@ body {
 }
 .mobile-menu__social-link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "roboto";
   font-style: normal;
