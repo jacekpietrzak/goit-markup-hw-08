@@ -743,12 +743,12 @@ body {
 }
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   list-style-type: none;
 }
 .mobile-menu__social-link {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   font-family: "roboto";
   font-style: normal;
@@ -1355,7 +1355,7 @@ body {
     margin-bottom: 30px;
   }
   .team__image {
-    min-width: 100%;
+    width: 100%;
     display: block;
   }
   .team__details {

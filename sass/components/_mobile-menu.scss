@@ -104,13 +104,13 @@
 
     &__social-list {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         list-style-type: none;
     }
 
     &__social-link {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         font-family: 'roboto';
         font-style: normal;        
