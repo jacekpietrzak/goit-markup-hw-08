@@ -112,7 +112,7 @@
     }
 
     &__terms {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         align-self: center;
         font-weight: 400;
@@ -123,6 +123,11 @@
 
         &--margin-bottom {
             margin-bottom: 30px;
+        }
+
+        &--mobile {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
